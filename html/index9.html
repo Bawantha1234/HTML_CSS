@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        #btn{/*(0,1,0,0)*/)
+            color: dodgerblue:
+        }
+
+        .custom-btn{/*(0,0,1,0)*/
+            color: green;
+        }
+        button{/*(0,0,0,1)*/
+            color: red;
+        }
+        *{/*(0,0,0,0)*/
+            color: yellow;
+        }
+        h1{
+            color: red;
+        }
+        .h1class[name]{
+            color: deeppink;
+        }
+        .h1class{/*(0,0,1,0)*/
+            color: orange;
+        }
+        [name]{/*(0,0,1,0)*/
+            color: mediumpurple;
+        }
+    </style>
+</head>
+<body>
+
+<button class="custom-btn" id="btn"style="color: orange">Click</button>/*(1,0,0,0)*/
+
+<h1 class="h1class"name="hello">Hello</h1>
+<h1 class="h1class">Welcome</h1>
+<h1 name="hello">Hii</h1>
+</body>
+</html>

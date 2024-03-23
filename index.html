@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+
+  <link rel="stylesheet"href="Style.css"><!--Plug External CSS-->
+
+  <!--Internal CSS-->
+  <style >
+    h2{
+      color:red;
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+<body>
+<h1 style="color: red; text-decoration: underline">Welcome to H1</h1><!--Inline CSS-->
+<h2 class="my-bg">Welcome to H2</h2>
+<h3>Welcome to H3</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem blanditiis dolorem expedita ipsam molestias, natus necessitatibus nihil nostrum omnis placeat porro rerum soluta suscipit tenetur ut, vitae voluptates voluptatibus.</p>
+
+
+
+
+<ol>
+    <h1 class="bawantha">I'm List</h1>
+
+    <li>Java</li>
+    <li class="bawantha">Python</li>
+    <li>GO</li>
+</ol>
+
+
+<style>
+
+    /*--Type Selector--*/
+
+    h3{
+        color: green;
+    }
+
+    p{
+        color: blue;
+    }
+
+    li{
+        color: orange;
+    }
+    h1{
+        color: red;
+    }
+
+    /*--Class Selector--*/
+
+    .bawantha{
+        color: deeppink;
+    }
+
+    .my-bg{
+        background: aqua;
+    }
+
+    /*--ID Selector--*/
+
+    #blue-text{
+        background: brown;
+    }
+    #my-text{
+        text-decoration: underline;
+    }
+
+    /*--Universal Selector--*/
+
+    *{
+        font-style: italic;
+    }
+
+    /*--Attribute Selector--*/
+
+    [href]{
+        background: darkblue;
+    }
+    [href ='https://www.ijse.lk']{
+        background:darkslateblue;
+    }
+    /*--Attribute selector with attribute starting value( ^= )--*/
+    [href^="https"]{
+        background:darkslateblue;
+    }
+    /*--Attribute selector with attribute ending value( $= )--*/
+    [href$=".com"]{
+        background:darkslateblue;
+    }
+    [href$=".lk"]{
+        background:black;
+    }
+
+    /*--Attribute selector with given attribute value snippt( *= )--*/
+    [href*="met"]{
+        background:mediumpurple;
+    }
+
+    /*--Attribute selector with given attribute value word( ~= )--*/
+    [href~="met"]{
+        background:mediumpurple;
+    }
+
+    /*--Attribute selector with Type Selector--*/
+    h1[href="http://www.freepik.com"]{
+        background:chartreuse;
+    }
+
+    /*--Attribute selector with ID Selector--*/
+    #ijse[href]{
+        background:chartreuse;
+    }
+
+    /*--Attribute selector with Class Selector--*/
+    .my-institute[href]{
+        background:chartreuse;
+    }
+
+</style>
+
+
+<ol>
+    <h1>I'm List</h1>
+
+    <li id="blue-text">Java</li>
+    <li class="bawantha">Python</li>
+    <li id="my-text">GO</li>
+</ol>
+
+<ol>
+    <h1>I'm List</h1>
+
+    <li>
+        <a href="https://www.ijse.lk">IJSE</a>
+    </li>
+
+    <li >
+        <a href="http://www.freepik.com">Python</a>
+    </li>
+
+    <li>
+        <a href="https://translate.google.lk">GO</a>
+    </li>
+
+</ol>
+
+
+<ol>
+    <h1>I'm List</h1>
+
+    <li>
+        <h1 id="ijse"> <a href="https://www.ijse.lk">IJSE</a></h1>
+    </li>
+
+    <li >
+        <h1 class="my-institute"> <a href= "http://www.freepik met .com">Freepik</a></h1>
+    </li>
+
+    <li>
+        <a href="https://translate met.google.lk">GoogleTranslate</a>
+    </li>
+
+</ol>
+
+
+<ol>
+    <h1>I'm List</h1>
+
+    <li>
+        <a href id="https://www.ijse.lk">IJSE</a>
+    </li>
+
+    <li >
+        <h1><a href="http://www.freepik.com">Freepik</a></h1>
+    </li>
+
+    <li>
+          <a href="https://translate.google.lk">GoogleTranslate</a>
+    </li>
+
+</ol>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex 2</title>
+    <style>
+        section{
+            border:2px solid orange;
+            display: flex;
+            height: 500px;
+            justify-content: space-around;
+        }
+        section>div{
+            width: 200px;
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        section>div:first-child{
+            background-color: lightpink;
+            align-self: start;/*start,center,end*/
+
+        }
+        section>div:nth-child(2){
+            background-color: lightcoral;
+            align-self: center;/*start,center,end*/
+        }
+        section>div:nth-child(3){
+            background-color: deeppink;
+            align-self: end;/*start,center,end*/
+        }
+        section>div:nth-child(4){
+            background-color: hotpink;
+            align-self: center;/*start,center,end*/
+        }
+        section>div:nth-child(5){
+            background-color: orangered;
+            align-self: start;/*start,center,end*/
+        }
+        section>div:nth-child(6){
+            background-color: saddlebrown;
+            align-self: center;/*start,center,end*/
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>

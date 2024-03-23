@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main{
+            width: 50vw;
+            height: 50vh;
+            border: 5px solid red;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            display: flex;
+            overflow: hidden;
+        }
+        main>div{
+            width: 50vw;
+            height: 50vh;
+            background-color: yellow;
+            border: 1px solid green;
+        }
+        main>div:first-child{
+            background-image: url("assert/th.jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        main>div:nth-child(2){
+            background-image: url("assert/th (1).jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        main>div:nth-child(3){
+            background-image: url("assert/th (2).jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        main>div:nth-child(4){
+            background-image: url("assert/th (3).jpeg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        section{
+            width: 200vw;
+
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</main>
+</body>
+</html>

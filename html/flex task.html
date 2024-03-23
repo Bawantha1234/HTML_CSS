@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex task</title>
+    <link rel="stylesheet" href="assert/normalize.css">
+    <link rel="stylesheet" href="assert/fontawesome/css/all.css">
+    <style>
+        main{
+            max-width: 800px;
+          margin: auto;
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+        }
+        section>div{
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        @media all and (max-width:700px){
+            section{
+                display: block;
+
+            }
+            section>div{
+                margin: auto;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<main>
+<section>
+    <div>
+        <h3>Vision</h3>
+        <i class="fa-solid fa-eye"></i>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div>
+        <h3>Mission</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+
+    <div>
+        <h3>Values</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <br>
+</section>
+</main>
+<script rel="stylesheet">
+
+</script>
+
+</body>
+</html>
